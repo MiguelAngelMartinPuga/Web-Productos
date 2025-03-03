@@ -1,0 +1,107 @@
+.usuarios-container {
+  padding: 30px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1000px;
+}
+
+h2{
+  color: black;
+}
+
+.usuarios-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+/* Lista de usuarios */
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Elemento de usuario */
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Contenedor de la información del usuario */
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Nombre de usuario */
+.user-name {
+  font-size: 1.1rem;
+  margin-right: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Correo electrónico */
+.user-email {
+  font-size: 1rem;
+  color: black;
+}
+
+/* Contenedor de los botones */
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botón de editar */
+.editar-btn,
+.eliminar-btn {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.editar-btn {
+  background-color: #ffb84d;
+  color: white;
+}
+
+.editar-btn:hover {
+  background-color: #ffa31a;
+}
+
+.eliminar-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.eliminar-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Mensaje si no se encuentran usuarios */
+.no-users-message {
+  font-size: 1.2rem;
+  color: #999;
+}

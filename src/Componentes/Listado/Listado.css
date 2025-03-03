@@ -1,0 +1,152 @@
+/* Contenedor para todo el componente Listado */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal para Listado */
+.listado-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Estilo para el botón de volver */
+.volver-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.volver-btn:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para el título */
+.listado-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilo para el botón de crear */
+.crear-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.crear-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para la barra de búsqueda */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Estilo para la tabla */
+.product-table {
+  flex-grow: 1;
+  overflow-y: auto; /* ✅ Solo la tabla se desplaza */
+  max-height: 60vh; /* Ajusta según necesidad */
+}
+
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+
+.product-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-table thead {
+  position: sticky;
+  top: 0;
+  background: #f1f1f1;
+  z-index: 10;
+}
+
+.product-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Estilo para el botón de editar */
+.editar-btn {
+  background-color: #ffc107;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+/* Efecto hover para el botón de editar */
+.editar-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Estilo para el botón de eliminar */
+.eliminar-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Efecto hover para el botón de eliminar */
+.eliminar-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Mensaje cuando no se encuentran productos */
+td[colspan="3"] {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  padding: 20px;
+}

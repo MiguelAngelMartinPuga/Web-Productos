@@ -1,0 +1,118 @@
+/* 🎨 Contenedor principal del formulario de edición */
+.editar-producto-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* 📝 Título */
+  .editar-producto-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333333;
+    font-weight: 700;
+  }
+  
+  /* 📝 Formulario */
+  .editar-producto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  /* 🏷️ Etiquetas */
+  .editar-producto-form label {
+    text-align: left;
+    font-weight: 600;
+    color: #555555;
+  }
+  
+  /* 🧩 Campos de entrada y descripción */
+  .editar-producto-form input,
+  .editar-producto-form textarea {
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: 1.5px solid #cccccc;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+  }
+  
+  .editar-producto-form input:focus,
+  .editar-producto-form textarea:focus {
+    outline: none;
+    border-color: #2196f3;
+  }
+  
+  /* 🎯 Botón de actualización */
+  .actualizar-btn {
+    padding: 0.9rem;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .actualizar-btn:hover {
+    background-color: #1976d2;
+    transform: translateY(-2px);
+  }
+  
+  .actualizar-btn:active {
+    transform: translateY(0);
+  }
+
+  .volver-btn {
+    align-items: start;
+    background-color: rgb(216, 17, 17);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .volver-btn:hover {
+    background-color: red;
+  }
+  
+  /* ⚡ Mensaje de error */
+  .error-message {
+    background-color: #ffe6e6;
+    color: #ff4d4d;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* 💡 Textarea para descripción */
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* 📱 Diseño responsivo */
+  @media (max-width: 768px) {
+    .editar-producto-container {
+      padding: 1.5rem;
+    }
+  
+    .editar-producto-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

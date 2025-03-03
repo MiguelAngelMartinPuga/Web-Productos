@@ -1,0 +1,129 @@
+/* Contenedor principal */
+.crear-producto-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.crear-producto-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+/* Formulario de creación */
+.crear-producto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Etiquetas del formulario */
+.crear-producto-form label {
+  text-align: left;
+  font-weight: 600;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+/* Campos de entrada */
+.crear-producto-form input,
+.crear-producto-form textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1.5px solid #cccccc;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.crear-producto-form input:focus,
+.crear-producto-form textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.crear-producto-form input[type="file"] {
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1.5px solid #cccccc;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.crear-producto-form input[type="file"]:hover {
+  background-color: #f1f1f1;
+}
+
+/*  Botón de envío */
+.crear-btn {
+  padding: 0.7rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.crear-btn:hover {
+  background-color: #45a049;
+}
+
+.crear-btn:active {
+  transform: translateY(0);
+}
+
+.volver-btn {
+  align-items: start;
+  background-color: rgb(216, 17, 17);
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s ease;
+}
+
+.volver-btn:hover {
+  background-color: red;
+}
+
+/* Mensaje de error */
+.error-message {
+  background-color: #ffe6e6;
+  color: #ff4d4d;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Textarea estilizado */
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .crear-producto-container {
+      padding: 1.2rem;
+  }
+
+  .crear-producto-container h2 {
+      font-size: 1.4rem;
+  }
+}

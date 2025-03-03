@@ -1,0 +1,110 @@
+/* Contenedor principal de la página */
+.editar-usuario-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.editar-usuario-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Alineación del botón "Atras" a la izquierda */
+.volver-btn {
+    align-items: start;
+    background-color: rgb(216, 17, 17);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+  
+.volver-btn:hover {
+    background-color: red;
+}
+
+/* Estilo del mensaje de error */
+.error-message {
+    color: #e74c3c;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Formulario de edición de usuario */
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilo de los campos de entrada (nombre, correo, etc.) */
+.user-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box; /* Hace que el padding no afecte el tamaño total */
+    color: #000; /* Asegura que el texto dentro del input sea negro */
+}
+
+/* Estilo del botón de actualizar usuario */
+.user-form button {
+    background-color: #03d95c;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-form button:hover {
+    background-color: #01d057;
+}
+
+/* Deshabilitar el botón mientras se carga */
+.user-form button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Estilo de los valores de información (por ejemplo, nombre y correo) */
+.user-info {
+    color: #000; /* Información en color negro */
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .editar-usuario-container {
+        padding: 15px;
+    }
+
+    .editar-usuario-title {
+        font-size: 1.8rem;
+    }
+
+    .user-form input {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .user-form button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
